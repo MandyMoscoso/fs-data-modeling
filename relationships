@@ -18,3 +18,34 @@ recipes vs grocery_lists because 1 recipe can have many ingredients. On the othe
 recipes vs occasions because 1 recipes can be used for different occasion, such as a cake can be used for birthday or graduation day... And 1 occasion may need more than 1 dishes, such as steaks, lobsters and burgers for a backyard bbq party.
 
 users vs occasions: 1 user can have many occasions saved. Each occasions can also be ceblerated by many users, ex: July 4th.
+
+
+
+Column
+    1. users => columns
+        user_id : need an id for each user
+        email: registration email
+        password: to log in
+
+    2. recipes => columns
+        recipe_id: unique id for each recipe - needs to seperate them
+        user_id: to link with the users
+        ingredients: the details of each recipes
+        instruction: instruction for that specific recipe
+        public: true/false to let other people view your recipe or not
+
+    3. grocery_lists => columns
+        list_id: grocery list id to differentiate with other lists
+        user_id: which user this list belongs to
+        ingredients: user added ingredients or ingredients from recipes.
+        meal_id: to link with the meals that user want to cook
+    
+    4. occasions => columns
+        user_id: which user choose this occasion
+        recipe_id: which recipe to use for this occasion
+        occasion_id: occasion id to make them unique
+
+    5. meals_list
+        user_id: which user created this meal list
+        recipe_id: which recipe this meals list need
+        meal_id: the unique id for this list
