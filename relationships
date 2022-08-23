@@ -1,0 +1,20 @@
+one-to-one
+
+user vs grocery_lists, assuming the user only create a general grocery lists and doesn't create several for different store. Then the user should only have 1 grocery list at a time. The grocery list should also belong to just 1 person who created it since everyone has different needs.
+
+
+
+
+one-to-many
+users vs recipes (user_id) because 1 user can have several recipes, but that specific recipe (id) is created by only 1 user.
+
+recipes vs users (recipe_id) : one recipe can be saved/ bookmark by different users
+
+
+
+many-to-many
+recipes vs grocery_lists because 1 recipe can have many ingredients. On the other hand, one ingredient can also be used to make several dishes, and people can buy 1 thing for different recipes.
+
+recipes vs occasions because 1 recipes can be used for different occasion, such as a cake can be used for birthday or graduation day... And 1 occasion may need more than 1 dishes, such as steaks, lobsters and burgers for a backyard bbq party.
+
+users vs occasions: 1 user can have many occasions saved. Each occasions can also be ceblerated by many users, ex: July 4th.
